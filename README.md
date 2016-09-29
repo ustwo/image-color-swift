@@ -25,7 +25,7 @@ For creating a UIImage from a UIColor
 
 	// Applying the image to the background of a UIButton
 
-	button.setBackgroundImage(image, forState: .Normal)
+	button.setBackgroundImage(image, forState: .normal)
 
 To specify the size of the image:  
 
