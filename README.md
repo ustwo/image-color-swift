@@ -21,15 +21,15 @@ An iOS helper class for creating a UIImage from a UIColor
 
 For creating a UIImage from a UIColor
 
-	let image = UIImage.imageFromColor(UIColor.blueColor())
+	let image = UIImage.imageFromColor(UIColor.blue)
 
 	// Applying the image to the background of a UIButton
 
-	self.button.setBackgroundImage(image, forState: .Normal)
+	button.setBackgroundImage(image, forState: .normal)
 
 To specify the size of the image:  
 
-	let image = UIImage.imageFromColor(UIColor.blueColor(), width: 1.0, height: 2.0)
+	let image = UIImage.imageFromColor(UIColor.blue, width: 1.0, height: 2.0)
 
 
 ## Contributors
