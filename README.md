@@ -31,12 +31,15 @@ To specify the size of the image:
 
 	let image = UIImage.imageFromColor(UIColor.blue, width: 1.0, height: 2.0)
 
+## Contributing
 
-## Contributors
+	Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms. See the [Code of Conduct](CODE_OF_CONDUCT) file.
+
+## Maintainers
 
 * [Daniela Dias](mailto:daniela@ustwo.com)
 * [Shagun Madhikarmi](mailto:shagun@ustwo.com)
 
 ## License
 
-UIImageColorSwift is released under the MIT License. See the LICENSE file.
+UIImageColorSwift is released under the MIT License. See [License](LICENSE).
