@@ -32,25 +32,23 @@ extension UIImage {
 
     /**
      Creates a UIImage from a UIColor object
-
      - parameter color: The color to create the image from
      - parameter width: The width of the image to be created (optional). Default value is 1.0
      - parameter height: The height of the image to be created (optional). Default value is 1.0
-
      - returns: A UIImage of that specified color otherwise nil
      */
-    class func imageFromColor(color: UIColor, width: CGFloat = 1.0, height: CGFloat = 1.0) -> UIImage? {
+    class func imageFromColor(_ color: UIColor, width: CGFloat = 1.0, height: CGFloat = 1.0) -> UIImage? {
 
         var image: UIImage?
 
-        let rect = CGRect(x: 0.0, y : 0.0, width: width, height: height)
+        let rect = CGRect(x: 0.0, y: 0.0, width: width, height: height)
 
         UIGraphicsBeginImageContext(rect.size)
 
-        if let context: CGContextRef = UIGraphicsGetCurrentContext() {
+        if let context: CGContext = UIGraphicsGetCurrentContext() {
 
-            CGContextSetFillColorWithColor(context, color.CGColor)
-            CGContextFillRect(context, rect)
+            context.setFillColor(color.cgColor)
+            context.fill(rect)
 
             image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
