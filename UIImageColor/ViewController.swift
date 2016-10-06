@@ -10,18 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    fileprivate(set) var button: UIButton!
+    fileprivate(set) var button: UIButton = UIButton()
 
 
     override func viewDidLoad() {
 
         super.viewDidLoad()
 
-        self.title = "UIImage+Color"
+        title = "UIImage+Color"
 
-        self.setupButton()
+        setupButton()
 
-        // Create image from color 
+        // Create image from color
 
         let image = UIImage.imageFromColor(UIColor.blue)
         let highlightedImage = UIImage.imageFromColor(UIColor.purple)
@@ -34,8 +34,8 @@ class ViewController: UIViewController {
         let navigationBarBackgroundImage = UIImage.imageFromColor(UIColor.gray, width: 1.0, height: 2.0)
         let navigationBarShadowImage = UIImage.imageFromColor(UIColor.black.withAlphaComponent(0.8), width: 1.0, height: 2.0)
 
-        self.navigationController?.navigationBar.shadowImage = navigationBarShadowImage
-        self.navigationController?.navigationBar.setBackgroundImage(navigationBarBackgroundImage, for: .default)
+        navigationController?.navigationBar.shadowImage = navigationBarShadowImage
+        navigationController?.navigationBar.setBackgroundImage(navigationBarBackgroundImage, for: .default)
     }
 
 
@@ -43,7 +43,6 @@ class ViewController: UIViewController {
 
     fileprivate func setupButton() {
 
-        button = UIButton()
         button.setTitle("Button", for: UIControlState())
         button.setTitleColor(UIColor.white, for: UIControlState())
         button.clipsToBounds = true
@@ -59,7 +58,7 @@ class ViewController: UIViewController {
             NSLayoutConstraint(item: button, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 44.0),
             NSLayoutConstraint(item: button, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1.0, constant: 100.0)
         ]
+
         view.addConstraints(constraints)
     }
 }
-

@@ -43,9 +43,9 @@ extension UIImage {
 
         var image: UIImage?
 
-        let rect = CGRectMake(0.0, 0.0, width, height);
+        let rect = CGRect(x: 0.0, y : 0.0, width: width, height: height)
 
-        UIGraphicsBeginImageContext(rect.size);
+        UIGraphicsBeginImageContext(rect.size)
 
         if let context: CGContextRef = UIGraphicsGetCurrentContext() {
 
