@@ -5,7 +5,7 @@
 
 # UIImage+Color.swift
 
-An iOS helper class for creating a UIImage from a UIColor
+An iOS helper class for creating a `UIImage` from a `UIColor`.
 
 ## Dependencies
 
@@ -13,13 +13,37 @@ An iOS helper class for creating a UIImage from a UIColor
 
 ## Installation
 
+### CocoaPods
+
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+
+```bash
+$ gem install cocoapods
+```
+
+To integrate UIImageColorSwift into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+platform :ios, '8.3'
+
+use_frameworks!
+
+pod 'UIImageColorSwift', '~> 1.0.0'
+```
+
+Then, run the following command:
+
+```bash
+$ pod install
+```
+
 ### Manually
 
 * Add the `UIImage+Color.swift` file from the `Sources` folder to your Xcode project.
 
 ## Usage
 
-For creating a UIImage from a UIColor
+For creating a `UIImage` from a `UIColor`
 
 	let image = UIImage.imageFromColor(UIColor.blue)
 
@@ -33,7 +57,8 @@ To specify the size of the image:
 
 ## Contributing
 
-	Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms. See the [Code of Conduct](CODE_OF_CONDUCT) file.
+Please note that this project is released with a Contributor Code of Conduct.
+By participating in this project you agree to abide by its terms. See the [Code of Conduct](CODE_OF_CONDUCT) file.
 
 ## Maintainers
 
