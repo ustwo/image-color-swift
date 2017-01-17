@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'UIImageColorSwift'
-  spec.version = '1.0.0'
+  spec.version = '1.0.1'
   spec.license = 'MIT'
   spec.summary = 'An iOS helper class for creating a UIImage from a UIColor.'
   spec.homepage = 'https://github.com/ustwo/image-color-swift'
@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   }
   spec.source = {
     :git => 'https://github.com/ustwo/image-color-swift.git',
-    :tag => 'v1.0.0'
+    :tag => 'v1.0.1'
   }
   spec.ios.deployment_target = '8.3'
   spec.source_files = 'Sources/*.swift'
