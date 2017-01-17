@@ -28,7 +28,7 @@ platform :ios, '8.3'
 
 use_frameworks!
 
-pod 'UIImageColorSwift', '~> 1.0.0'
+pod 'UIImageColorSwift', '~> 1.0.1'
 ```
 
 Then, run the following command:
