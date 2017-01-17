@@ -4,6 +4,8 @@ disabled_rules: # rule identifiers to exclude from running
 
 # parameterized rules can be customised from this configuration file
 line_length: 200
+vertical_whitespace:
+  max_empty_lines: 2
 
 custom_rules:
   # pragma mark style

@@ -37,7 +37,7 @@ extension UIImage {
      - parameter height: The height of the image to be created (optional). Default value is 1.0
      - returns: A UIImage of that specified color otherwise nil
      */
-    class func imageFromColor(_ color: UIColor, width: CGFloat = 1.0, height: CGFloat = 1.0) -> UIImage? {
+    open class func imageFromColor(_ color: UIColor, width: CGFloat = 1.0, height: CGFloat = 1.0) -> UIImage? {
 
         var image: UIImage?
 
