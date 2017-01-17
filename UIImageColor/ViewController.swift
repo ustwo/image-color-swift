@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     fileprivate(set) var button: UIButton = UIButton()
 
 
+    // MARK: - View Lifecycle
+
     override func viewDidLoad() {
 
         super.viewDidLoad()
